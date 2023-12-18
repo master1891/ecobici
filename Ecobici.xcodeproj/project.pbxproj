@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A417E29A2B2E024A006F2CD3 /* EcobiciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2992B2E024A006F2CD3 /* EcobiciApp.swift */; };
+		A417E29C2B2E024A006F2CD3 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E29B2B2E024A006F2CD3 /* AuthenticationView.swift */; };
+		A417E29E2B2E024C006F2CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A417E29D2B2E024C006F2CD3 /* Assets.xcassets */; };
+		A417E2A12B2E024C006F2CD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A417E2A02B2E024C006F2CD3 /* Preview Assets.xcassets */; };
+		A417E2A82B2E0366006F2CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A417E2A72B2E0366006F2CD3 /* GoogleService-Info.plist */; };
+		A417E2AC2B2E0680006F2CD3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A417E2AB2B2E0680006F2CD3 /* FirebaseAnalytics */; };
+		A417E2AE2B2E0680006F2CD3 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A417E2AD2B2E0680006F2CD3 /* FirebaseAnalyticsSwift */; };
+		A417E2B12B2E2207006F2CD3 /* EAuthenticaiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2B02B2E2207006F2CD3 /* EAuthenticaiton.swift */; };
+		A417E2B32B2E262D006F2CD3 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2B22B2E262D006F2CD3 /* LoginEmailView.swift */; };
+		A417E2B62B2E264F006F2CD3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2B52B2E264F006F2CD3 /* RegisterView.swift */; };
+		A417E2B82B2E5409006F2CD3 /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2B72B2E5409006F2CD3 /* DismissView.swift */; };
+		A417E2BA2B2E5750006F2CD3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A417E2B92B2E5750006F2CD3 /* FirebaseAuth */; };
+		A417E2BC2B2E57DF006F2CD3 /* AutheticationDataSourceFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2BB2B2E57DF006F2CD3 /* AutheticationDataSourceFirebase.swift */; };
+		A417E2BF2B2E5BBB006F2CD3 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2BE2B2E5BBB006F2CD3 /* AuthRepository.swift */; };
+		A417E2C22B2E62AF006F2CD3 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2C12B2E62AF006F2CD3 /* AuthenticationViewModel.swift */; };
+		A417E2C42B2E8139006F2CD3 /* HomeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2C32B2E8139006F2CD3 /* HomeMapView.swift */; };
+		A417E2C92B2E8A1F006F2CD3 /* BiciRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2C82B2E8A1F006F2CD3 /* BiciRepository.swift */; };
+		A417E2CB2B2E8A3C006F2CD3 /* BiciDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2CA2B2E8A3C006F2CD3 /* BiciDatasource.swift */; };
+		A417E2CD2B2E8BA1006F2CD3 /* SesionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2CC2B2E8BA1006F2CD3 /* SesionUtil.swift */; };
+		A417E2CF2B2E923F006F2CD3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2CE2B2E923F006F2CD3 /* Endpoint.swift */; };
+		A417E2D12B2E9852006F2CD3 /* BiciViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2D02B2E9852006F2CD3 /* BiciViewModel.swift */; };
+		A417E2D32B2E9ACF006F2CD3 /* BiciResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417E2D22B2E9ACF006F2CD3 /* BiciResponse.swift */; };
+		A4FC8E952B2F79740091DFF4 /* MessageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC8E942B2F79740091DFF4 /* MessageError.swift */; };
+		A4FC8E972B2FB9B20091DFF4 /* ListBicisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC8E962B2FB9B20091DFF4 /* ListBicisView.swift */; };
+		A4FC8E992B2FC0E80091DFF4 /* DetailBici.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC8E982B2FC0E80091DFF4 /* DetailBici.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A417E2962B2E024A006F2CD3 /* Ecobici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecobici.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A417E2992B2E024A006F2CD3 /* EcobiciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcobiciApp.swift; sourceTree = "<group>"; };
+		A417E29B2B2E024A006F2CD3 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		A417E29D2B2E024C006F2CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A417E2A02B2E024C006F2CD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A417E2A72B2E0366006F2CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A417E2B02B2E2207006F2CD3 /* EAuthenticaiton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAuthenticaiton.swift; sourceTree = "<group>"; };
+		A417E2B22B2E262D006F2CD3 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
+		A417E2B52B2E264F006F2CD3 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A417E2B72B2E5409006F2CD3 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
+		A417E2BB2B2E57DF006F2CD3 /* AutheticationDataSourceFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutheticationDataSourceFirebase.swift; sourceTree = "<group>"; };
+		A417E2BE2B2E5BBB006F2CD3 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		A417E2C12B2E62AF006F2CD3 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		A417E2C32B2E8139006F2CD3 /* HomeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapView.swift; sourceTree = "<group>"; };
+		A417E2C82B2E8A1F006F2CD3 /* BiciRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiciRepository.swift; sourceTree = "<group>"; };
+		A417E2CA2B2E8A3C006F2CD3 /* BiciDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiciDatasource.swift; sourceTree = "<group>"; };
+		A417E2CC2B2E8BA1006F2CD3 /* SesionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionUtil.swift; sourceTree = "<group>"; };
+		A417E2CE2B2E923F006F2CD3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A417E2D02B2E9852006F2CD3 /* BiciViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiciViewModel.swift; sourceTree = "<group>"; };
+		A417E2D22B2E9ACF006F2CD3 /* BiciResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiciResponse.swift; sourceTree = "<group>"; };
+		A4FC8E942B2F79740091DFF4 /* MessageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageError.swift; sourceTree = "<group>"; };
+		A4FC8E962B2FB9B20091DFF4 /* ListBicisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBicisView.swift; sourceTree = "<group>"; };
+		A4FC8E982B2FC0E80091DFF4 /* DetailBici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBici.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A417E2932B2E024A006F2CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A417E2AE2B2E0680006F2CD3 /* FirebaseAnalyticsSwift in Frameworks */,
+				A417E2BA2B2E5750006F2CD3 /* FirebaseAuth in Frameworks */,
+				A417E2AC2B2E0680006F2CD3 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A417E28D2B2E024A006F2CD3 = {
+			isa = PBXGroup;
+			children = (
+				A417E2982B2E024A006F2CD3 /* Ecobici */,
+				A417E2972B2E024A006F2CD3 /* Products */,
+				A417E2AA2B2E0680006F2CD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A417E2972B2E024A006F2CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2962B2E024A006F2CD3 /* Ecobici.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A417E2982B2E024A006F2CD3 /* Ecobici */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2C62B2E8557006F2CD3 /* network */,
+				A417E2C02B2E6286006F2CD3 /* viewmodels */,
+				A417E2BD2B2E5B92006F2CD3 /* domain */,
+				A417E2B42B2E2632006F2CD3 /* views */,
+				A417E2AF2B2E21CE006F2CD3 /* utils */,
+				A417E2A72B2E0366006F2CD3 /* GoogleService-Info.plist */,
+				A417E2992B2E024A006F2CD3 /* EcobiciApp.swift */,
+				A417E29D2B2E024C006F2CD3 /* Assets.xcassets */,
+				A417E29F2B2E024C006F2CD3 /* Preview Content */,
+			);
+			path = Ecobici;
+			sourceTree = "<group>";
+		};
+		A417E29F2B2E024C006F2CD3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2A02B2E024C006F2CD3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A417E2AA2B2E0680006F2CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A417E2AF2B2E21CE006F2CD3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2CC2B2E8BA1006F2CD3 /* SesionUtil.swift */,
+				A417E2B02B2E2207006F2CD3 /* EAuthenticaiton.swift */,
+				A417E2CE2B2E923F006F2CD3 /* Endpoint.swift */,
+				A4FC8E942B2F79740091DFF4 /* MessageError.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A417E2B42B2E2632006F2CD3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2C72B2E89EF006F2CD3 /* map */,
+				A417E2C52B2E8525006F2CD3 /* Authentication */,
+				A417E2B72B2E5409006F2CD3 /* DismissView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A417E2BD2B2E5B92006F2CD3 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2BE2B2E5BBB006F2CD3 /* AuthRepository.swift */,
+				A417E2C82B2E8A1F006F2CD3 /* BiciRepository.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		A417E2C02B2E6286006F2CD3 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2C12B2E62AF006F2CD3 /* AuthenticationViewModel.swift */,
+				A417E2D02B2E9852006F2CD3 /* BiciViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		A417E2C52B2E8525006F2CD3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A417E29B2B2E024A006F2CD3 /* AuthenticationView.swift */,
+				A417E2B22B2E262D006F2CD3 /* LoginEmailView.swift */,
+				A417E2B52B2E264F006F2CD3 /* RegisterView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A417E2C62B2E8557006F2CD3 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2BB2B2E57DF006F2CD3 /* AutheticationDataSourceFirebase.swift */,
+				A417E2CA2B2E8A3C006F2CD3 /* BiciDatasource.swift */,
+				A417E2D22B2E9ACF006F2CD3 /* BiciResponse.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A417E2C72B2E89EF006F2CD3 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				A417E2C32B2E8139006F2CD3 /* HomeMapView.swift */,
+				A4FC8E962B2FB9B20091DFF4 /* ListBicisView.swift */,
+				A4FC8E982B2FC0E80091DFF4 /* DetailBici.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A417E2952B2E024A006F2CD3 /* Ecobici */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A417E2A42B2E024C006F2CD3 /* Build configuration list for PBXNativeTarget "Ecobici" */;
+			buildPhases = (
+				A417E2922B2E024A006F2CD3 /* Sources */,
+				A417E2932B2E024A006F2CD3 /* Frameworks */,
+				A417E2942B2E024A006F2CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecobici;
+			packageProductDependencies = (
+				A417E2AB2B2E0680006F2CD3 /* FirebaseAnalytics */,
+				A417E2AD2B2E0680006F2CD3 /* FirebaseAnalyticsSwift */,
+				A417E2B92B2E5750006F2CD3 /* FirebaseAuth */,
+			);
+			productName = Ecobici;
+			productReference = A417E2962B2E024A006F2CD3 /* Ecobici.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A417E28E2B2E024A006F2CD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A417E2952B2E024A006F2CD3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A417E2912B2E024A006F2CD3 /* Build configuration list for PBXProject "Ecobici" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A417E28D2B2E024A006F2CD3;
+			packageReferences = (
+				A417E2A92B2E0624006F2CD3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A417E2972B2E024A006F2CD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A417E2952B2E024A006F2CD3 /* Ecobici */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A417E2942B2E024A006F2CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A417E2A12B2E024C006F2CD3 /* Preview Assets.xcassets in Resources */,
+				A417E29E2B2E024C006F2CD3 /* Assets.xcassets in Resources */,
+				A417E2A82B2E0366006F2CD3 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A417E2922B2E024A006F2CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A417E29C2B2E024A006F2CD3 /* AuthenticationView.swift in Sources */,
+				A417E2CB2B2E8A3C006F2CD3 /* BiciDatasource.swift in Sources */,
+				A4FC8E952B2F79740091DFF4 /* MessageError.swift in Sources */,
+				A417E2BF2B2E5BBB006F2CD3 /* AuthRepository.swift in Sources */,
+				A417E2D32B2E9ACF006F2CD3 /* BiciResponse.swift in Sources */,
+				A417E2B62B2E264F006F2CD3 /* RegisterView.swift in Sources */,
+				A417E2D12B2E9852006F2CD3 /* BiciViewModel.swift in Sources */,
+				A417E2C92B2E8A1F006F2CD3 /* BiciRepository.swift in Sources */,
+				A417E2B12B2E2207006F2CD3 /* EAuthenticaiton.swift in Sources */,
+				A417E29A2B2E024A006F2CD3 /* EcobiciApp.swift in Sources */,
+				A417E2BC2B2E57DF006F2CD3 /* AutheticationDataSourceFirebase.swift in Sources */,
+				A417E2C42B2E8139006F2CD3 /* HomeMapView.swift in Sources */,
+				A417E2CD2B2E8BA1006F2CD3 /* SesionUtil.swift in Sources */,
+				A4FC8E972B2FB9B20091DFF4 /* ListBicisView.swift in Sources */,
+				A417E2CF2B2E923F006F2CD3 /* Endpoint.swift in Sources */,
+				A417E2C22B2E62AF006F2CD3 /* AuthenticationViewModel.swift in Sources */,
+				A417E2B32B2E262D006F2CD3 /* LoginEmailView.swift in Sources */,
+				A417E2B82B2E5409006F2CD3 /* DismissView.swift in Sources */,
+				A4FC8E992B2FC0E80091DFF4 /* DetailBici.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A417E2A22B2E024C006F2CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A417E2A32B2E024C006F2CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A417E2A52B2E024C006F2CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ecobici/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CW2653TZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nels.master.Ecobici;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A417E2A62B2E024C006F2CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ecobici/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CW2653TZY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nels.master.Ecobici;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A417E2912B2E024A006F2CD3 /* Build configuration list for PBXProject "Ecobici" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A417E2A22B2E024C006F2CD3 /* Debug */,
+				A417E2A32B2E024C006F2CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A417E2A42B2E024C006F2CD3 /* Build configuration list for PBXNativeTarget "Ecobici" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A417E2A52B2E024C006F2CD3 /* Debug */,
+				A417E2A62B2E024C006F2CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A417E2A92B2E0624006F2CD3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A417E2AB2B2E0680006F2CD3 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A417E2A92B2E0624006F2CD3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A417E2AD2B2E0680006F2CD3 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A417E2A92B2E0624006F2CD3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		A417E2B92B2E5750006F2CD3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A417E2A92B2E0624006F2CD3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A417E28E2B2E024A006F2CD3 /* Project object */;
+}
